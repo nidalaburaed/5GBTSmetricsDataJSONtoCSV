@@ -1,6 +1,6 @@
 # Description
 
-A C++-based script that generates 5G NR (vRAN) call-related metrics data (JSON) into Excel (CSV) format
+A C++-based script that generates 5G NR (vRAN) call-related metrics data file (JSON) into Excel (CSV) format
 
 # How to run the code
 
