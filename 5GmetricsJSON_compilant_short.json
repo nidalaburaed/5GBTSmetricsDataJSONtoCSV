@@ -1,0 +1,14 @@
+[
+    {
+        "dl_throughput_mbps": 1161.74,
+        "ul_throughput_mbps": 411.49,
+        "connected_users": 268,
+        "handover_success_rate": 98.79,
+        "drop_call_rate": 0.13,
+        "latency_ms": 23.61,
+        "packet_loss_rate": 0.16,
+        "cpu_utilization_percent": 73.32,
+        "memory_utilization_percent": 75.89,
+        "timestamp": "2024-06-01 00:00:00"
+    }
+  ]

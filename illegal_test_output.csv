@@ -1,0 +1,2 @@
+dl_throughput_mbps,ul_throughput_mbps,connected_users,handover_success_rate,drop_call_rate,latency_ms,packet_loss_rate,cpu_utilization_percent,memory_utilization_percent,timestamp
+,,,,,,,,,2024-06-01 00:00:00
