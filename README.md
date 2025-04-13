@@ -1,6 +1,6 @@
 # Description
 
-A script to generate 5G NR (vRAN) call-related metrics data (JSON) into Excel (CSV) format
+A C++-based script that generates 5G NR (vRAN) call-related metrics data (JSON) into Excel (CSV) format
 
 # How to run the code
 
@@ -18,4 +18,8 @@ Run the code using the following command:
 
 # Notes
 
-Example JSON files provided in this repository
+Example JSON files are provided in the repository
+
+## Inquiries
+
+In case of inquiries, feel free to send a message via email to nidalaburaed94@gmail.com
