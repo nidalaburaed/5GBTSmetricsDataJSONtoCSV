@@ -1,0 +1,50 @@
+[
+    {
+      "dl_throughput_mbps": "210",
+      "ul_throughput_mbps": "87",
+      "connected_users": "40",
+      "handover_success_rate": "99.5",
+      "drop_call_rate": "0.3",
+      "latency_ms": "40",
+      "packet_loss_rate": "0.2",
+      "cpu_utilization_percent": "62",
+      "memory_utilization_percent": "64",
+      "timestamp": "2025-04-22T19:00:00"
+    },
+    {
+      "dl_throughput_mbps": "212",
+      "ul_throughput_mbps": "88",
+      "connected_users": "41",
+      "handover_success_rate": "99.4",
+      "drop_call_rate": "0.3",
+      "latency_ms": "39",
+      "packet_loss_rate": "0.2",
+      "cpu_utilization_percent": "64",
+      "memory_utilization_percent": "65",
+      "timestamp": "2025-04-22T19:05:00"
+    },
+    {
+      "dl_throughput_mbps": "213",
+      "ul_throughput_mbps": "89",
+      "connected_users": "42",
+      "handover_success_rate": "99.4",
+      "drop_call_rate": "0.3",
+      "latency_ms": "38",
+      "packet_loss_rate": "0.2",
+      "cpu_utilization_percent": "89",
+      "memory_utilization_percent": "88",
+      "timestamp": "2025-04-22T19:10:00"
+    },
+    {
+      "dl_throughput_mbps": "214",
+      "ul_throughput_mbps": "90",
+      "connected_users": "43",
+      "handover_success_rate": "99.3",
+      "drop_call_rate": "0.3",
+      "latency_ms": "38",
+      "packet_loss_rate": "0.2",
+      "cpu_utilization_percent": "65",
+      "memory_utilization_percent": "67",
+      "timestamp": "2025-04-22T19:15:00"
+    }
+  ]
