@@ -6,9 +6,18 @@
 
 ##### C++-based script that converts 5G NR (vRAN) call-related metrics data file (JSON) content into Excel (CSV) format. 
 ##### The script also has comprehensive monitoring features to support the network operator in their daily work while doing the conversion.
-##### The script calculates the in-point of time KPIs (UL/DL Ratio, Per User DL (Mbps), Per User UL (Mbps), Throughput Efficiency per CPU, Throughput Efficiency per Memory, Call Reliability Index, Latency/Throughput Ratio, Resource Load Index, User Load Efficiency) from every sample of the JSON data at a specific point in time. 
-##### After the inpoint KPIs calculation, it prints the summary KPIs (Average DL Throughput (Mbps), Average UL Throughput (Mbps), Min Latency (ms), Max Latency (ms), Average Latency (ms), Average Packet Loss Rate (%), Average Drop Call Rate (%), Average Handover Success Rate (%), Average CPU Utilization (%), Average Memory Utilization (%), Average Connected Users) over the full dataset. 
-##### Within the same function (printkpisummary) the script also executes 4 anomaly detection KPIs (Throughput Drop During Peak Hours, High Latency with Low Resource Load, Call Drop Rate Spike with Stable Users and HO Success, High CPU/Memory Spike with No Traffic Growth).
+##### The script calculates the in-point of time KPIs at specific point of time for each sample in the JSON. These KPIs are:
+
+ 	•	UL/DL Ratio, Per User DL (Mbps), Per User UL (Mbps), Throughput Efficiency per CPU, Throughput Efficiency per Memory, Call Reliability Index, Latency/Throughput Ratio, Resource Load Index, User Load Efficiency
+
+##### After the inpoint KPIs calculation, it prints summary KPIs, and they are the following:
+
+	•	Average DL Throughput (Mbps), Average UL Throughput (Mbps), Min Latency (ms), Max Latency (ms), Average Latency (ms), Average Packet Loss Rate (%), Average Drop Call Rate (%), Average Handover Success Rate (%), Average CPU Utilization (%), Average Memory Utilization (%), Average Connected Users
+
+##### Within the same function (printkpisummary) the script also executes 4 anomaly detection KPIs. These KPIs are the following:
+
+ 	•	Throughput Drop During Peak Hours, High Latency with Low Resource Load, Call Drop Rate Spike with Stable Users and HO Success, High CPU/Memory Spike with No Traffic Growth
+
 ##### Finally, the script writes the JSON-content into a csv-file.
 
 ##### The script is doing this because it is designed to support the network operator with his/hers very specialized needs. This serving of the operator is done by spotting alarming anomalies to the network operator using seamless "buzzwords" in order to simulate instant recovery actions reponse for common problems widely known among network operators. These are most common and usually the first place to investigate:
@@ -92,7 +101,7 @@ Run the code using the following command:
 
 # Notes
 
-Example JSON files are provided in the repository
+Example JSON files are provided in the repository for testing purposes
 
 ## Inquiries
 
