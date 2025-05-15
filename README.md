@@ -85,6 +85,86 @@ Less common, but worth checking during area-wide spikes.
 	•	Bad config pushed via EMS (wrong PCI/TA/NRARFCN).
 	•	Incomplete restart after upgrade, e.g., partial component active.
 
+# DEMO
+
+```bash
+$ ./5GmetricsJSONtoExcel.exe 5GJ2C_anomaly.json test.csv
+
+===== Point-in-Time KPIs =====
+Sample #1 [Timestamp: 2025-04-22T19:00:00]
+ - UL/DL Ratio: 0.41
+ - Per User DL (Mbps): 5.25
+ - Per User UL (Mbps): 2.17
+ - Throughput Efficiency per CPU: 4.79
+ - Throughput Efficiency per Memory: 4.64
+ - Call Reliability Index (%): 99.70
+ - Latency/Throughput Ratio: 0.13
+ - Resource Load Index: 63.00
+ - User Load Efficiency: 0.32
+
+Sample #2 [Timestamp: 2025-04-22T19:05:00]
+ - UL/DL Ratio: 0.42
+ - Per User DL (Mbps): 5.17
+ - Per User UL (Mbps): 2.15
+ - Throughput Efficiency per CPU: 4.69
+ - Throughput Efficiency per Memory: 4.62
+ - Call Reliability Index (%): 99.70
+ - Latency/Throughput Ratio: 0.13
+ - Resource Load Index: 64.50
+ - User Load Efficiency: 0.32
+
+Sample #3 [Timestamp: 2025-04-22T19:10:00]
+ - UL/DL Ratio: 0.42
+ - Per User DL (Mbps): 5.07
+ - Per User UL (Mbps): 2.12
+ - Throughput Efficiency per CPU: 3.39
+ - Throughput Efficiency per Memory: 3.43
+ - Call Reliability Index (%): 99.70
+ - Latency/Throughput Ratio: 0.13
+ - Resource Load Index: 88.50
+ - User Load Efficiency: 0.24
+
+Sample #4 [Timestamp: 2025-04-22T19:15:00]
+ - UL/DL Ratio: 0.42
+ - Per User DL (Mbps): 4.98
+ - Per User UL (Mbps): 2.09
+ - Throughput Efficiency per CPU: 4.68
+ - Throughput Efficiency per Memory: 4.54
+ - Call Reliability Index (%): 99.70
+ - Latency/Throughput Ratio: 0.12
+ - Resource Load Index: 66.00
+ - User Load Efficiency: 0.33
+
+=========================================
+
+===== 5G Metrics Summary =====
+Average DL Throughput (Mbps): 212.25
+Average UL Throughput (Mbps): 88.50
+Min Latency (ms): 38.00
+Max Latency (ms): 40.00
+Average Latency (ms): 38.75
+Average Packet Loss Rate (%): 0.20
+Average Drop Call Rate (%): 0.30
+Average Handover Success Rate (%): 99.40
+Average CPU Utilization (%): 70.00
+Average Memory Utilization (%): 71.00
+Average Connected Users: 41.50
+
+===== Anomaly: Throughput Drop During Peak Hours =====
+Insufficient non-peak data.
+
+===== Anomaly: High Latency with Low Resource Load =====
+No high-latency/low-load anomalies detected.
+
+===== Anomaly: Call Drop Rate Spike With Stable Users and HO Success =====
+No call drop spikes with stable conditions detected.
+
+===== Anomaly: High CPU/Memory Spike with No Traffic Growth =====
+Anomaly at 2025-04-22T19:10:00: CPU = 89.00%, Memory = 88.00%, DL = 213.00 Mbps,                                                                                                                                   UL = 89.00 Mbps (No significant traffic growth)
+=======================================================================
+CSV file written to test.csv
+```
+
 # Instructions to compile and run the code
 
 Compile the code using the following command:
