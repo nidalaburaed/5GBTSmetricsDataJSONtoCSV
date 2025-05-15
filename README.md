@@ -179,6 +179,10 @@ Run the code using the following command:
 ./5GmetricsJSONtoExcel <input.json> <output.csv>
 ```
 
+# Next steps
+
+Automatic detection of new JSON-metric file - polling feature
+
 # Notes
 
 Example JSON files are provided in the repository for testing purposes
